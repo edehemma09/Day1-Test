@@ -1,6 +1,6 @@
-import { Todo } from "../../app/models"
+import { Todo } from "../../app/models";
 
-export const todos: Todo[] = [
+export const todosData: Todo[] = [
     {
         id: 1,
         title: "Set up a new angular project",

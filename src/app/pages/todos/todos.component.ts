@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
 
   selector: "app-todos",
   templateUrl: "./todos.component.html",
-  styleUrls: ['./todos.component.scss']
+  styleUrls: ['./todos.component.scss', './todos.component.css']
 
 })
 export class TodosComponent{}
