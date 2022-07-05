@@ -16,6 +16,16 @@ export class AppComponent {
   userName: any='';
   // Structural directive
   showMenu: boolean = false;
+  dishes: string[]=['Beans and plaintain', 'Beans & Plantain','Bread, groundnut & Coke',
+  'Nsala & Pounded Yam',
+  'Bread and Coconut',
+  'Fio-Fio & Yam',
+  'Noodles and Egg',
+  'Abacha',
+  'Okro Soup',
+  'Fried Plaintain & Fried Potatoe',
+  'Okpa and Coke']
+  // dishes:Array<string>
 
 
 toggleMenu(): void{

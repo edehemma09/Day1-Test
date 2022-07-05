@@ -17,8 +17,8 @@
 <button (click)="toggleMenu()">Show Menu</button>
 
 <ul *ngIf="showMenu === true">
-  <li>Beans & Plantain</li>
-  <li>Bread, groundnut & Coke</li>
+  <li *ngFor="let dish Of dishes;">{{ dish }}</li>
+  <!-- <li>Bread, groundnut & Coke</li>
   <li>Nsala & Pounded Yam</li>
   <li> Bread and Coconut</li>
   <li> Fio-Fio & Yam </li>
@@ -26,5 +26,5 @@
   <li>Abacha</li>
   <li>Okro Soup</li>
   <li>Fried Plaintain & Fried Potatoe</li>
-  <li>Okpa and Coke</li>
+  <li>Okpa and Coke</li> -->
 </ul>
