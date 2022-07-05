@@ -11,3 +11,20 @@
 <h2>{{ userName || "No user name"}}</h2>
 
 <!-- ===== Structural Directives========= -->
+
+<h3>Food Menus</h3>
+<br>
+<button (click)="toggleMenu()">Show Menu</button>
+
+<ul *ngIf="showMenu === true">
+  <li>Beans & Plantain</li>
+  <li>Bread, groundnut & Coke</li>
+  <li>Nsala & Pounded Yam</li>
+  <li> Bread and Coconut</li>
+  <li> Fio-Fio & Yam </li>
+  <li>Noodles and Egg</li>
+  <li>Abacha</li>
+  <li>Okro Soup</li>
+  <li>Fried Plaintain & Fried Potatoe</li>
+  <li>Okpa and Coke</li>
+</ul>
