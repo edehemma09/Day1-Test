@@ -3,8 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css', './app.component.scss']
 })
 export class AppComponent {
-  title = 'Day1-Test';
+  title = 'Angular Day1-Test';
+  description : string = 'Angular class takung place @pmt';
+  isClassEnded: boolean = false;
+  numberOfStudent:number= 7;
+  choiceOfJob:String='Best job is to destroy';
+  temprament:string='Aggressive & Clown';
+
+  // This begins the two way binding
+
+  userName: any='';
+
 }

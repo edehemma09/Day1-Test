@@ -1,3 +1,13 @@
-<h1>
-Hello Welcome to my page
-</h1>
+<!-- =====One Way binding====== -->
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+<h3>{{isClassEnded}}</h3>
+<h3>{{numberOfStudent}}</h3>
+<p>{{choiceOfJob}}</p>
+<h5>{{temprament}}</h5>
+
+<!-- =====Two way binding===== -->
+<input type="text"[(ngModel)]="userName" placeholder="Enter Username">
+<h2>{{ userName || "No user name"}}</h2>
+
+<!-- ===== Structural Directives========= -->
