@@ -12,9 +12,14 @@ export class AppComponent {
   numberOfStudent:number= 7;
   choiceOfJob:String='Best job is to destroy';
   temprament:string='Aggressive & Clown';
-
   // This begins the two way binding
-
   userName: any='';
+  // Structural directive
+  showMenu: boolean = false;
+
+
+toggleMenu(): void{
+  this.showMenu = !this.showMenu;
+}
 
 }
