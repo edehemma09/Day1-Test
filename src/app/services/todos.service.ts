@@ -18,11 +18,9 @@ export class TodosServices{
 
       }
 
-          retrieveTodos(){
-            setTimeout(()=>{
-              return this.db_todos
+          retrieveTodos(): Todo[] {
 
-            }, 5000)
+              return this.db_todos
           }
 
       createTodo(payload:any){
