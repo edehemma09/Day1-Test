@@ -68,3 +68,9 @@
 
     </tr>
 </table>
+<br>
+<div class="wrapper">
+<div *ngFor="let sport of sportsRecords; let i= index">
+<app-sport [sport]="sport"></app-sport>
+</div>
+</div>
