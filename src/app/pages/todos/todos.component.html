@@ -1,2 +1,6 @@
 <p> i am testing</p>
-<app-todo>Todo Works</app-todo>
+<h2>Todos Works</h2>
+
+<div *ngFor="let todo of todoRecords;">
+<app-todo [todo]="todo"> </app-todo>
+</div>
