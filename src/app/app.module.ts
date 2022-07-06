@@ -12,6 +12,7 @@ import { Sports } from './providers/sports';
 import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
+import { SportComponent } from './pages/sport/sport.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Router, RouterModule } from '@angular/router';
     TodosComponent,
     TodoComponent,
     SportsUiComponent,
+    SportComponent,
   ],
   imports: [
     BrowserModule,

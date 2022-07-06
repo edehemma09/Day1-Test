@@ -33,3 +33,38 @@
 
     </tr>
 </table>
+<br>
+<br>
+<table *ngIf="cricketRecords.length > 0">
+  <thead>
+    <tr>
+      <th>S/N</th>
+      <th>Country</th>
+      <th>Region</th>
+      <th>Stadium</th>
+      <th>Start</th>
+      <th>Match</th>
+      <th>Tournament</th>
+      <th>Actions</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of cricketRecords; let i=index">
+      <td>{{i + 1}}</td>
+      <td>{{record?.country}}</td>
+      <td>{{record?.region }}</td>
+      <td>{{record?.stadium}}</td>
+      <td>{{record?.start}}</td>
+      <td>{{record?.match}}</td>
+      <td>{{record?.tournament}}</td>
+      <td>
+
+        <button>   Edit     </button>
+        <button>   Delete     </button>
+
+      </td>
+
+    </tr>
+</table>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Sports } from '../../providers/sports';
 import  {Sport} from '../../models/sport';
+import { Cricket } from '../../models/sport';
 
 @Component({
   selector: 'app-sports-ui',
@@ -12,6 +13,7 @@ export class SportsUiComponent implements OnInit {
   loading: boolean = false
 
   sportsRecords:Sport[] = [];
+  cricketRecords:Sport[] = [];
 
 
 
@@ -30,6 +32,7 @@ export class SportsUiComponent implements OnInit {
       next:((res:any) => {
         this.loading = false;
         this.sportsRecords = res.football;
+        this.cricketRecords = res.cricket;
         console.log('response', res )
       }),
 
@@ -43,5 +46,6 @@ export class SportsUiComponent implements OnInit {
     })
 
   }
+
 
 }
