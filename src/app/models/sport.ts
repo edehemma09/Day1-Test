@@ -1,4 +1,4 @@
-export interface sport {
+export interface Sport {
   stadium: string;
   country: string;
   region: string;
@@ -7,7 +7,7 @@ export interface sport {
   match: string;
 }
 
-export class sport {
+export class Sport {
   stadium: string;
   country: string;
   region: string;

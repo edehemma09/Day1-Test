@@ -1,8 +1,8 @@
 // import {Movie} from "./movie";
-import {sport} from "./sport";
+import {Sport} from "./sport";
 
 export interface ApiResponse{
-football: sport [];
-cricket: sport[];
+football: Sport [];
+cricket: Sport[];
 golf:any;
 }

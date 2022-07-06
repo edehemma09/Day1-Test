@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sports } from '../../providers/sports';
-
+import  {Sport} from '../../models/sport';
 
 @Component({
   selector: 'app-sports-ui',
@@ -11,12 +11,12 @@ export class SportsUiComponent implements OnInit {
 
   loading: boolean = false
 
-  sportsuiRecords:Sports[] = [];
-  
+  sportsRecords:Sport[] = [];
+
 
 
   constructor(
-    private sports: Sports
+    private sports: Sports,
 
   ){}
   ngOnInit(): void {
@@ -29,10 +29,10 @@ export class SportsUiComponent implements OnInit {
     this.sports.retrieveSportRecords('Canada').subscribe({
       next:((res:any) => {
         this.loading = false;
-        this.sports = res.football;
+        this.sportsRecords = res.football;
         console.log('response', res )
       }),
-      
+
       error:((err:any) => {
 
         this.loading= false;
