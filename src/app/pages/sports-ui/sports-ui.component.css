@@ -1,3 +1,35 @@
+table{
+  width: 100%;
+}
+
+thead{
+  background-color: rgb(30, 30, 161);
+  margin: 0px auto;
+  height:20px;
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+th{
+  height: 30px;
+}
+tr{
+  height: 50%;
+}
 tbody {
   background-color: aqua;
+  font-family: sans-serif;
+  font-size: 17px;
+
+
+
+}
+button{
+  height: 30px;
+  width: 50%;
+  border-radius: 10%;
+  background-color: rgb(83, 81, 81);
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 17px;
 }
