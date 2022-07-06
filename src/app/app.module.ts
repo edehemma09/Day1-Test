@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './pages/todos/todos.component';
 import { TodoComponent } from './pages/todo/todo.component';
 import { TodosServices } from './services/todos.service';
+import { ApiService } from './services/api.service';
+import { Sports } from './providers/sports';
+import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     TodoComponent,
+    SportsUiComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,8 +27,9 @@ import { TodosServices } from './services/todos.service';
 
 
   ],
-  providers: [TodosServices],
-  bootstrap: [AppComponent]
+  providers: [TodosServices, ApiService, Sports],
+  bootstrap: [AppComponent],
+
 
 })
 export class AppModule { }
