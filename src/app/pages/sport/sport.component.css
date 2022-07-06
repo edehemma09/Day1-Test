@@ -1,0 +1,30 @@
+.wrapper{
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5%;
+  box-sizing:border-box;
+  box-shadow: 1px 2px 1px 2px;
+}
+.card-title{
+  margin-top: -30%;
+}
+  .image-card {
+    border: 1px solid ;
+    margin-top: -20%;
+    width: 250px;
+    height: 200px;
+
+}
+li{
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: white;
+  background-color: blueviolet;
+
+}
