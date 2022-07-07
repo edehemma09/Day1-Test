@@ -1,11 +1,25 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-<form >
-
-
- <label>Email Address: <input type="email" placeholder="Enter Email"> </label>
-
- <label>Password:  <input type="password" placeholder="******"></label>
-
-  <button>Submit</button>
+  <div>
+    <label for="email">Email</label>
+    <input
+    type="email"
+    name="email"
+    id="email"
+    placeholder="example@gmail.com"
+    formControlName="email">
+</div>
+<div>
+    <label for="password">Password</label>
+    <input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="*********"
+    formControlName="password">
+</div>
+<div>
+    <button>Login</button>
+</div>
 
 </form>

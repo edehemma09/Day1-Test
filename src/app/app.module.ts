@@ -14,7 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { SportComponent } from './pages/sport/sport.component';
 import { LoginComponent } from './pages/login/login.component';
-
+import { AuthService } from './services/auth.services';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 
   ],
-  providers: [TodosServices, ApiService, Sports],
+  providers: [TodosServices,ApiService,AuthService,Sports,  ],
   bootstrap: [AppComponent],
 
 
