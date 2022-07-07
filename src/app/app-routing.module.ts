@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SportComponent } from './pages/sport/sport.component';
 import { SportsUiComponent } from './pages/sports-ui/sports-ui.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,13 @@ const routes: Routes = [
   {
     path: 'sport',
     component: SportComponent,
+  },
+
+  {
+  path: 'login',
+  component: LoginComponent,
   }
+
 ];
 
 @NgModule({

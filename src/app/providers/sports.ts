@@ -29,5 +29,11 @@ export class Sports {
     )
 
   }
+//
+// the login component.........................
 
+  createSport(payload : any){
+   return this.apiService.postApi(this.url, payload).pipe(
+   map((res:any)=>res)   )
+  }
 }
