@@ -1,10 +1,14 @@
 
 .wrapper{
   margin: 10px;
+  margin-top: -20;
   padding: 20px;
   border-radius: 5%;
   box-sizing:border-box;
-  box-shadow: 1px 2px 1px 2px;
+  border-radius: 32px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  22px 22px 47px #7b7b7b,
+               -22px -22px 47px #ffffff;
   width: 100%;
   height: 400px;
 
@@ -28,10 +32,14 @@ li{
 }
 button {
   margin: 10px;
-  height: 30px;
-  width: 80px;
+  height: 40px;
+  width: 100%;
   border-radius: 10px;
-  color: white;
-  background-color: blueviolet;
+  color: rgb(238, 230, 230);
+  background-color:rgb(50, 71, 189);
+
+}
+ul{
+  border: 0px auto;
 
 }
