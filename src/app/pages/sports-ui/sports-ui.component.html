@@ -50,6 +50,8 @@
 
     </tr>
   </thead>
+
+  <!-- Cricket records -->
   <tbody>
     <tr *ngFor="let record of cricketRecords; let i=index">
       <td>{{i + 1}}</td>
@@ -69,8 +71,12 @@
     </tr>
 </table>
 <br>
+<br>
+<!-- Angular  Card  -->
+
+
 <div class="wrapper">
-<div *ngFor="let sport of sportsRecords; let i= index">
+<ul *ngFor="let sport of sportsRecords; let i= index" class="container-wrap">
 <app-sport [sport]="sport"></app-sport>
-</div>
+</ul>
 </div>
