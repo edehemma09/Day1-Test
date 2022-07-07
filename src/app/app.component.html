@@ -1,21 +1,21 @@
 <!-- =====One Way binding====== -->
 <router-outlet> welcome to the  main page</router-outlet>
-<h1>{{title}}</h1>
+<!-- <h1>{{title}}</h1>
 <p>{{description}}</p>
 <h3>{{isClassEnded}}</h3>
 <h3>{{numberOfStudent}}</h3>
 <p>{{choiceOfJob}}</p>
-<h5>{{temprament}}</h5>
+<h5>{{temprament}}</h5> -->
 
 <!-- =====Two way binding===== -->
-<input type="text"[(ngModel)]="userName" placeholder="Enter Username">
+<input type="text"[(ngModel)]="userName" placeholder="Enter Username" disabled="true" style="margin-left: -220px;">
 <h2>{{ userName || "No user name"}}</h2>
 
 <!-- ===== Structural Directives========= -->
-
+<!--
 <h3>Food Menus</h3>
 <br>
-<button (click)="toggleMenu()">Show Menu</button>
+<button (click)="toggleMenu()">Show Menu</button> -->
 
 <ul *ngIf="showMenu === true">
   <li *ngFor="let dish Of dishes;">{{ dish }}</li>

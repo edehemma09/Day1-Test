@@ -34,18 +34,23 @@ button{
   font-size: 17px;
 }
 .wrapper{
-  border: 1px solid goldenrod;
+
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 250px;
   margin: 20px;
-  padding: 20px;
-  background-color: cornflowerblue;
-}
-div{
+  padding: 10px;
+  height: 350px;
 
-  border: 1px solid red;
+
+}
+ul{
+  /* border: 10px solid gray; */
   width: 500px;
-  display: grid;
-  grid-column: span;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5%;
+  font-size: 15px;
+  font-family: sans-serif;
+  justify-content: space-around;
 }
